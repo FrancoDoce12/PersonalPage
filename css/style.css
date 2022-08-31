@@ -46,6 +46,7 @@ h1 {
     white-space: nowrap;
 }
 
+
 .where-is-this {
     background-color: rgba(137, 43, 226, 0.432);
 }
@@ -60,9 +61,6 @@ h1 {
     
 }
 
-.about-me p{
-    
-}
 
 .img-1 {
     
@@ -71,7 +69,12 @@ h1 {
     justify-self: stretch;
 
     border-radius: 6px;
+}
 
+.pharagraph-description {
+    text-justify: distribute-all-lines;
+    font-weight: 600;
+    /* font-size: 1.02em; */
 }
 
 .grid-1 {
@@ -92,8 +95,8 @@ h1 {
                         'nothing_4  nothing_4  nothing_4   nothing_4   nothing_4'
                         'nothing_4  nothing_4  nothing_4   nothing_4   nothing_4';
 
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
 
 
 
