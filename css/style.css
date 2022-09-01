@@ -58,18 +58,21 @@ h1 {
 
 .separation {
     height: 900px;
-    
 }
 
 
 .img-1 {
-    
     object-fit: cover;
     align-self: stretch;
     justify-self: stretch;
 
     border-radius: 6px;
 }
+
+#special-img-1 {
+}
+
+
 
 .pharagraph-description {
     text-justify: distribute-all-lines;
@@ -78,25 +81,27 @@ h1 {
 }
 
 .grid-1 {
-    height:800px ;
-    width: 100%;
+    height:fit-content;
+    width: auto;
 
     display: grid;
-    grid-template-columns:100px  repeat(4,200px) ;
-    grid-template-rows:  repeat(10,80px);
+    grid-template-columns:70px  repeat(3,200px) 70px ;
+    grid-template-rows: 80px  repeat(9,80px);
     grid-template-areas:'img_1      img_1      title       nothing_1   nothing_1'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
+                        'img_1      img_1      texto_1     texto_1     nothing_2'
                         'nothing_5  texto_2    texto_2     texto_2     nothing_2'
-                        'nothing_5  texto_2    texto_2     texto_2     nothing_2'
-                        'nothing_5  texto_3    texto_3     img_2       nothing_2'
-                        'nothing_5  texto_3    texto_3     img_2       nothing_2'
-                        'nothing_5  texto_4    img_3       nothing_3   nothing_2'
-                        'nothing_5  texto_4    img_3       nothing_3   nothing_2'
+                        'nothing_5  texto_3    texto_3     img_2       img_2'
+                        'nothing_5  texto_3    texto_3     img_2       img_2'
+                        'nothing_5  texto_4    img_3       nothing_3   nothing_3'
+                        'nothing_5  texto_4    img_3       nothing_3   nothing_3'
                         'nothing_4  nothing_4  nothing_4   nothing_4   nothing_4'
                         'nothing_4  nothing_4  nothing_4   nothing_4   nothing_4';
 
     column-gap: 10px;
     row-gap: 10px;
+
+    justify-content: center;
 
 
 
