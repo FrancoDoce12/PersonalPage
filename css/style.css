@@ -83,7 +83,7 @@ h1 {
 
     display: grid;
     grid-template-columns:100px  repeat(4,200px) ;
-    grid-template-rows: repeat(10,80px);
+    grid-template-rows:  repeat(10,80px);
     grid-template-areas:'img_1      img_1      title       nothing_1   nothing_1'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
                         'nothing_5  texto_2    texto_2     texto_2     nothing_2'
