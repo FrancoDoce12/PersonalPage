@@ -53,6 +53,19 @@ h1 {
     margin-top: -15px;
 }
 
+#personal-photo {
+    object-fit: cover;
+    align-self: stretch;
+    justify-self: stretch;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    margin: auto;
+}
+
 
 .where-is-this {
     background-color: rgba(137, 43, 226, 0.432);
@@ -61,6 +74,10 @@ h1 {
 .sub-title {
     font-family: "subTitleFont";
     letter-spacing: -2px;
+}
+
+.about-me-separation {
+    margin: 60px;
 }
 
 .separation {
@@ -76,16 +93,27 @@ h1 {
     border-radius: 6px;
 }
 
-#special-img-1 {
+
+.title-1-container{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.title-1{
+    text-align: center;
+    justify-self: start;
+    height: 30px;
+    font-weight: 700;
 }
 
-
-
-.pharagraph-description {
+.pharagraph-description-1 {
+    font-family: normalTextFont;
     text-justify: distribute-all-lines;
     font-weight: 600;
-    /* font-size: 1.02em; */
+    font-size: 21px;
 }
+
+
 
 .grid-1 {
     height:fit-content;
@@ -93,8 +121,8 @@ h1 {
 
     display: grid;
     grid-template-columns:70px  repeat(3,200px) 70px ;
-    grid-template-rows: 80px  repeat(7,80px) 150px 80px;
-    grid-template-areas:'img_1      img_1      title       nothing_1   nothing_1'
+    grid-template-rows: 80px  repeat(7,100px) 100px 100px;
+    grid-template-areas:'img_1      img_1      title       title       nothing_1'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
                         'nothing_5  texto_2    texto_2     texto_2     nothing_2'
@@ -131,8 +159,6 @@ h1 {
 
     column-gap: 20px;
     row-gap: 20px;
-
-
 
     background-color: rgba(137, 43, 226, 0.432);
 }
