@@ -121,7 +121,7 @@ h1 {
 
     display: grid;
     grid-template-columns:70px  repeat(3,200px) 70px ;
-    grid-template-rows: 80px  repeat(7,100px) 100px 100px;
+    grid-template-rows: 100px  repeat(7,100px) 100px 100px;
     grid-template-areas:'img_1      img_1      title       title       nothing_1'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
