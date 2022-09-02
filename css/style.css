@@ -46,6 +46,13 @@ h1 {
     white-space: nowrap;
 }
 
+#sub-title-my-job {
+    margin-top: -42px;
+}
+#sub-title-junior{
+    margin-top: -15px;
+}
+
 
 .where-is-this {
     background-color: rgba(137, 43, 226, 0.432);
@@ -86,17 +93,17 @@ h1 {
 
     display: grid;
     grid-template-columns:70px  repeat(3,200px) 70px ;
-    grid-template-rows: 80px  repeat(9,80px);
+    grid-template-rows: 80px  repeat(7,80px) 150px 80px;
     grid-template-areas:'img_1      img_1      title       nothing_1   nothing_1'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
                         'nothing_5  texto_2    texto_2     texto_2     nothing_2'
                         'nothing_5  texto_3    texto_3     img_2       img_2'
                         'nothing_5  texto_3    texto_3     img_2       img_2'
-                        'nothing_5  texto_4    img_3       nothing_3   nothing_3'
-                        'nothing_5  texto_4    img_3       nothing_3   nothing_3'
-                        'nothing_4  nothing_4  nothing_4   nothing_4   nothing_4'
-                        'nothing_4  nothing_4  nothing_4   nothing_4   nothing_4';
+                        'nothing_5  texto_4    texto_4     texto_4     nothing_3'
+                        'nothing_5  texto_4    texto_4     texto_4     nothing_3'
+                        'nothing_4  texto_5    img_3       img_3       nothing_3'
+                        'nothing_4  texto_5    img_3       img_3       nothing_3';
 
     column-gap: 10px;
     row-gap: 10px;
@@ -166,7 +173,9 @@ h1 {
 .grid-area-text-4 {
     grid-area: texto_4;
 }
-
+.grid-area-text-5 {
+    grid-area: texto_5;
+}
 
 
 .grid-area-img-1 {
