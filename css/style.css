@@ -91,6 +91,8 @@ h1 {
     justify-self: stretch;
 
     border-radius: 6px;
+
+    margin: 10px;
 }
 
 
@@ -104,6 +106,11 @@ h1 {
     justify-self: start;
     height: 30px;
     font-weight: 700;
+    font-size: 40px;
+
+    
+
+    
 }
 
 .pharagraph-description-1 {
@@ -111,8 +118,8 @@ h1 {
     text-justify: distribute-all-lines;
     font-weight: 600;
     font-size: 21px;
+    /* line-height: 29px; */
 }
-
 
 
 .grid-1 {
@@ -121,7 +128,7 @@ h1 {
 
     display: grid;
     grid-template-columns:70px  repeat(3,200px) 70px ;
-    grid-template-rows: 100px  repeat(7,100px) 100px 100px;
+    grid-template-rows: 100px  repeat(6,100px) 28px 100px 100px;
     grid-template-areas:'img_1      img_1      title       title       nothing_1'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
                         'img_1      img_1      texto_1     texto_1     nothing_2'
@@ -134,7 +141,7 @@ h1 {
                         'nothing_4  texto_5    img_3       img_3       nothing_3';
 
     column-gap: 10px;
-    row-gap: 10px;
+    row-gap: 5px;
 
     justify-content: center;
 
