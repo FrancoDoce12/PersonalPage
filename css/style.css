@@ -150,22 +150,26 @@ h1 {
     background-color: rgba(137, 43, 226, 0.432);
 }
 
+.img-2 {
+
+}
+
 .grid-2 {
     height:1000px ;
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(5,200px) ;
-    grid-template-rows: repeat(6,150px);
+    grid-template-columns: repeat(4,200px)  100px;
+    grid-template-rows: repeat(5,130px);
     grid-template-areas:'title      title      img_1       img_1        nothing_1'
                         'texto_1    texto_1    texto_1     img_2        img_2'
                         'texto_1    texto_1    texto_1     img_2        img_2'
                         'texto_1    texto_1    texto_1     img_2        img_2'
-                        'img_3      texto_2    texto_2     nothing_2    nothing_2'
-                        'img_3      texto_2    texto_2     nothing_2    nothing_2';
+                        'img_3      texto_2    texto_2     texto_2      nothing_2'
+                        ;
 
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 10px;
+    row-gap: 5px;
 
     background-color: rgba(137, 43, 226, 0.432);
 }
