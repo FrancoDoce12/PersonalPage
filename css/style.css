@@ -11,8 +11,6 @@
     src: url("/assets/Fonts/Prompt-Regular.ttf");
 }
 
-
-
 :root {
 --primary-ligth-blue: #1476A8;
 
@@ -109,6 +107,10 @@ h1 {
     font-size: 40px;
 }
 
+.grate-text {
+    /* font-family:"play" ,"titleFont"; */
+}
+
 .pharagraph-description-1 {
     font-family: normalTextFont;
     text-justify: distribute-all-lines;
@@ -185,7 +187,7 @@ h1 {
     grid-template-rows: 120px 189px 70px;
     grid-template-areas:'title      title      img_1       img_1        nothing_1'
                         'texto_1    texto_1    texto_1     img_2        img_2'
-                        'img_3      texto_2    texto_2     texto_2      texto_2'
+                        'img_3      texto_2    texto_2     texto_2      nothing_2'
                         ;
 
     column-gap: 9px;
