@@ -10,6 +10,15 @@
     font-family: "normalTextFont";
     src: url("/assets/Fonts/Prompt-Regular.ttf");
 }
+@font-face {
+    font-family: "for_i_bold";
+    src: url("/assets/Fonts/NotoSerif-Bold.ttf");
+}
+@font-face {
+    font-family: "for_i_regular";
+    src: url("/assets/Fonts/NotoSerif-Regular.ttf");
+}
+
 
 :root {
 --primary-ligth-blue: #1476A8;
@@ -107,8 +116,9 @@ h1 {
     font-size: 40px;
 }
 
-.grate-text {
-    /* font-family:"play" ,"titleFont"; */
+.i_appercase {
+    font-family: for_i_regular;
+    font-size: 23px;
 }
 
 .pharagraph-description-1 {
@@ -165,6 +175,19 @@ h1 {
 
     background-color: rgba(137, 43, 226, 0.432);
 }
+
+.img-2 {
+    object-fit: cover;
+    align-self: stretch;
+    justify-self: stretch;
+
+    border-radius: 6px;
+
+    margin: 10px;
+
+    object-position: 20%;
+}
+
 
 .container-title-3 {
     display: flex;
