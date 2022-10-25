@@ -34,8 +34,57 @@
 --normal-text-color:var(--terciary-black);
 --scpecial-text-color:var(--secondary-orange);
 --borders-color:var(--secondary-orange);
+}
+/* Animations clases */
+.img-hidden-left {
+    opacity: 0.40;
+    filter: blur(2px) grayscale(1);
+    transform: translatex(-20%);
+    transition: all 1s;
 
 }
+.img-hidden-right {
+    opacity: 0.40;
+    filter: blur(2px) grayscale(1);
+    transform: translatex(20%);
+    transition: all 1s;
+
+}
+.hidden-up-1 {
+    filter: blur(4px);
+    transform: translateY(-17%);
+    transition: all 400ms;
+}
+.hidden-up-2 {
+    filter: blur(4px);
+    transform: translateY(-25%);
+    transition: all 700ms;
+}
+.hidden-up-3 {
+    filter: blur(3px);
+    transform: translateY(-55%);
+    transition: all 850ms;
+}
+.hidden-left-1 {
+    filter: blur(4px);
+    transform: translateX(-15%);
+    transition: all 500ms;
+}
+.hidden-left-2 {
+    filter: blur(4px);
+    transform: translateX(-25%);
+    transition: all 700ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+
+
+
 .background-color-base {
     background-color: var(--base-bg-color);
 }
@@ -106,8 +155,8 @@ h1 {
 .title-1-container{
     display: flex;
     flex-direction: column-reverse;
-
 }
+
 .title-1{
     text-align: center;
     justify-self: start;
@@ -159,7 +208,7 @@ h1 {
 }
 
 .grid-2 {
-    height:430px ;
+    height:405px ;
     width: 100%;
 
 
