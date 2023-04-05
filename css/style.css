@@ -2,61 +2,68 @@
     font-family: "titleFont";
     src: url("/assets/Fonts/Anton-Regular.ttf");
 }
+
 @font-face {
     font-family: "subTitleFont";
     src: url("/assets/Fonts/Prompt-Medium.ttf");
 }
+
 @font-face {
     font-family: "normalTextFont";
     src: url("/assets/Fonts/Prompt-Regular.ttf");
 }
+
 @font-face {
     font-family: "for_i_bold";
     src: url("/assets/Fonts/NotoSerif-Bold.ttf");
 }
+
 @font-face {
     font-family: "for_i_regular";
     src: url("/assets/Fonts/NotoSerif-Regular.ttf");
 }
 
+.zIndex2 {
+    z-index: 2;
+}
 
 :root {
---primary-ligth-blue: #1476A8;
---primary-orange: #cf8413;
+    --primary-ligth-blue: #1476A8;
+    --primary-orange: #cf8413;
 
---secondary-blue: #0421DB;
---secondary-orange:#FF8051;
+    --secondary-blue: #0421DB;
+    --secondary-orange: #FF8051;
 
---terciary-black-orange:#B37142;
---terciary-black:#222742;
+    --terciary-black-orange: #B37142;
+    --terciary-black: #222742;
 
---black-1:#24253f;
---background-blue-1:#24253f;
---white-1:rgb(209, 209, 209);
---white-2:rgb(189, 189, 189);
---primary-text-orange: #b96505;
+    --black-1: #24253f;
+    --background-blue-1: #24253f;
+    --white-1: rgb(209, 209, 209);
+    --white-2: rgb(189, 189, 189);
+    --primary-text-orange: #b96505;
 
 
 
---base-bg-color:var(--primary-orange);
---normal-text-color:var(--terciary-black);
---scpecial-text-color:var(--secondary-orange);
---borders-color:var(--secondary-orange);
+    --base-bg-color: var(--primary-orange);
+    --normal-text-color: var(--terciary-black);
+    --scpecial-text-color: var(--secondary-orange);
+    --borders-color: var(--secondary-orange);
 }
 
 body {
-    background-color:var(--background-blue-1);
+    background-color: var(--background-blue-1);
 }
 
 .progresive-gradient-text-gray-1 {
-    background: linear-gradient(180deg, rgb(167, 167, 167) 90%,rgba(255,140,81,1) 10%);
+    background: linear-gradient(180deg, rgb(167, 167, 167) 90%, rgba(255, 140, 81, 1) 10%);
     background-size: 400%;
     background-clip: text;
     -webkit-background-clip: text;
-    color:transparent;
+    color: transparent;
     background-position: left;
     transition: all 1600ms;
-    
+
 }
 
 /* Animations clases */
@@ -67,6 +74,7 @@ body {
     transition: all 1s;
 
 }
+
 .img-hidden-right {
     opacity: 0.40;
     filter: blur(2px) grayscale(1);
@@ -74,26 +82,31 @@ body {
     transition: all 1s;
 
 }
+
 .hidden-up-1 {
     filter: blur(4px);
     transform: translateY(-17%);
     transition: all 600ms;
 }
+
 .hidden-up-2 {
     filter: blur(4px);
     transform: translateY(-25%);
     transition: all 900ms;
 }
+
 .hidden-up-3 {
     filter: blur(3px);
     transform: translateY(-55%);
     transition: all 850ms;
 }
+
 .hidden-left-1 {
     filter: blur(4px);
     transform: translateX(-15%);
     transition: all 700ms;
 }
+
 .hidden-left-2 {
     filter: blur(4px);
     transform: translateX(-25%);
@@ -106,6 +119,34 @@ body {
     transform: translate(0);
     background-position: right;
 }
+
+/* Drop dawn clases */
+.dropdownMenu {
+    z-index: 4;
+    list-style: none;
+    position: absolute;
+    top: 3%;
+    overflow: hidden;
+    background-color: var(--background-blue-1);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: 2px solid var(--primary-text-orange);
+    border-top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.507) 3px 3px 3px;
+    padding: 10px 20px;
+    transition: all ease 500ms;
+}
+
+.dropdownMenu-hide {
+    transform: translateY(-25%) scaleY(0%);
+}
+
+.dropdownMenu-show {
+    transform: translateY(25%) scaleY(100%)
+}
+
+
 
 .background-black-1 {
     background-color: var(--black-1);
@@ -121,13 +162,15 @@ body {
 }
 
 .text-1 {
-    color:var(--white-1);
+    color: var(--white-1);
 }
+
 .text-2 {
     color: var(--white-2);
 }
+
 .text-3 {
-    color:var(--primary-orange)
+    color: var(--primary-orange)
 }
 
 
@@ -152,7 +195,8 @@ h1 {
 #sub-title-my-job {
     margin-top: -42px;
 }
-#sub-title-junior{
+
+#sub-title-junior {
     margin-top: -15px;
 }
 
@@ -203,12 +247,12 @@ h1 {
 }
 
 
-.title-1-container{
+.title-1-container {
     display: flex;
     flex-direction: column-reverse;
 }
 
-.title-1{
+.title-1 {
     text-align: center;
     justify-self: start;
     height: 30px;
@@ -231,22 +275,22 @@ h1 {
 
 
 .grid-1 {
-    height:fit-content;
+    height: fit-content;
     width: auto;
 
     display: grid;
-    grid-template-columns:70px  repeat(3,200px) 70px ;
-    grid-template-rows: 100px  repeat(6,100px) 28px 100px 100px;
-    grid-template-areas:'img_1      img_1      title       title       nothing_1'
-                        'img_1      img_1      texto_1     texto_1     nothing_2'
-                        'img_1      img_1      texto_1     texto_1     nothing_2'
-                        'nothing_5  texto_2    texto_2     texto_2     nothing_2'
-                        'nothing_5  texto_3    texto_3     img_2       img_2'
-                        'nothing_5  texto_3    texto_3     img_2       img_2'
-                        'nothing_5  texto_4    texto_4     texto_4     nothing_3'
-                        'nothing_5  texto_4    texto_4     texto_4     nothing_3'
-                        'nothing_4  texto_5    img_3       img_3       nothing_3'
-                        'nothing_4  texto_5    img_3       img_3       nothing_3';
+    grid-template-columns: 70px repeat(3, 200px) 70px;
+    grid-template-rows: 100px repeat(6, 100px) 28px 100px 100px;
+    grid-template-areas: 'img_1      img_1      title       title       nothing_1'
+        'img_1      img_1      texto_1     texto_1     nothing_2'
+        'img_1      img_1      texto_1     texto_1     nothing_2'
+        'nothing_5  texto_2    texto_2     texto_2     nothing_2'
+        'nothing_5  texto_3    texto_3     img_2       img_2'
+        'nothing_5  texto_3    texto_3     img_2       img_2'
+        'nothing_5  texto_4    texto_4     texto_4     nothing_3'
+        'nothing_5  texto_4    texto_4     texto_4     nothing_3'
+        'nothing_4  texto_5    img_3       img_3       nothing_3'
+        'nothing_4  texto_5    img_3       img_3       nothing_3';
 
     column-gap: 10px;
     row-gap: 5px;
@@ -256,16 +300,16 @@ h1 {
 }
 
 .grid-2 {
-    height:405px ;
+    height: 405px;
     width: 100%;
 
 
     display: grid;
     grid-template-columns: 29% 40% 29%;
     grid-template-rows: 100px 300px;
-    grid-template-areas:'img_1       title      img_2'
-                        'img_1       texto_1    img_2'
-                        ;
+    grid-template-areas: 'img_1       title      img_2'
+        'img_1       texto_1    img_2'
+    ;
 
     column-gap: 10px;
     row-gap: 5px;
@@ -291,23 +335,23 @@ h1 {
     flex-direction: column;
 }
 
-.title-3{
+.title-3 {
     font-weight: 700;
     font-size: 40px;
     padding-top: 13px;
 }
 
 .grid-3 {
-    height:400px ;
+    height: 400px;
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(4,200px)  100px;
+    grid-template-columns: repeat(4, 200px) 100px;
     grid-template-rows: 120px 189px 70px;
-    grid-template-areas:'title      title      img_1       img_1        nothing_1'
-                        'texto_1    texto_1    texto_1     img_2        img_2'
-                        'img_3      texto_2    texto_2     texto_2      nothing_2'
-                        ;
+    grid-template-areas: 'title      title      img_1       img_1        nothing_1'
+        'texto_1    texto_1    texto_1     img_2        img_2'
+        'img_3      texto_2    texto_2     texto_2      nothing_2'
+    ;
 
     column-gap: 9px;
     row-gap: 5px;
@@ -317,21 +361,25 @@ h1 {
 
 .grid-area-title {
     grid-area: title;
-    
+
 }
 
 .grid-area-nothing-1 {
     grid-area: nothing_1;
 }
+
 .grid-area-nothing-2 {
     grid-area: nothing_2;
 }
+
 .grid-area-nothing-3 {
     grid-area: nothing_3;
 }
+
 .grid-area-nothing-4 {
     grid-area: nothing_4;
 }
+
 .grid-area-nothing-5 {
     grid-area: nothing_5;
 }
@@ -341,15 +389,19 @@ h1 {
 .grid-area-text-1 {
     grid-area: texto_1;
 }
+
 .grid-area-text-2 {
     grid-area: texto_2;
 }
+
 .grid-area-text-3 {
     grid-area: texto_3;
 }
+
 .grid-area-text-4 {
     grid-area: texto_4;
 }
+
 .grid-area-text-5 {
     grid-area: texto_5;
 }
@@ -358,9 +410,11 @@ h1 {
 .grid-area-img-1 {
     grid-area: img_1;
 }
+
 .grid-area-img-2 {
     grid-area: img_2;
 }
+
 .grid-area-img-3 {
     grid-area: img_3;
 }

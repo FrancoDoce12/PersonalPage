@@ -17,7 +17,7 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav class="container-fluid p-1 background-black-1">
+    <nav class="container-fluid p-1 background-black-1 zIndex2">
         <div class="container-md px-md-3">
             <div class="row justify-content-between align-content-center">
                 <div class="col-4 d-flex justify-content-center align-content-center">
@@ -27,14 +27,14 @@
                     <div class="row justify-content-between align-content-center f ps-3 flex-wrap">
                         <div class="col-auto text-1">Curriculum</div>
                         <div class="col-auto text-1">Contact Me</div>
-                        <div class="col-auto pe-0 text-1 dropdown ">
-                            <a id="dropdownProyects" data-bs-toggle="dropdown" aria-expanded="false" >
+                        <div class="col-auto pe-0 text-1 dropdownContainer">
+                            <a id="dropdownButton" aria-expanded="false" >
                                 My Proyects
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownProyects">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            <ul class="dropdownMenu dropdownMenu-hide " aria-labelledby="dropdownButton">
+                                <li><a href="#">site</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Action</a></li>
                             </ul>
                         </div>
                         <!-- Hacer que esto sea como un boton desplegalbe en el que se pueden elegir los proyectos mios en github referidos a react y la programacion -->
