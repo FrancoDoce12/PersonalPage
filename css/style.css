@@ -22,6 +22,7 @@
 
 :root {
 --primary-ligth-blue: #1476A8;
+--primary-orange: #cf8413;
 
 --secondary-blue: #0421DB;
 --secondary-orange:#FF8051;
@@ -29,12 +30,35 @@
 --terciary-black-orange:#B37142;
 --terciary-black:#222742;
 
+--black-1:#24253f;
+--background-blue-1:#24253f;
+--white-1:rgb(209, 209, 209);
+--white-2:rgb(189, 189, 189);
+--primary-text-orange: #b96505;
 
---base-bg-color:var(--primary-ligth-blue);
+
+
+--base-bg-color:var(--primary-orange);
 --normal-text-color:var(--terciary-black);
 --scpecial-text-color:var(--secondary-orange);
 --borders-color:var(--secondary-orange);
 }
+
+body {
+    background-color:var(--background-blue-1);
+}
+
+.progresive-gradient-text-gray-1 {
+    background: linear-gradient(180deg, rgb(167, 167, 167) 90%,rgba(255,140,81,1) 10%);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    background-position: left;
+    transition: all 1600ms;
+    
+}
+
 /* Animations clases */
 .img-hidden-left {
     opacity: 0.40;
@@ -53,12 +77,12 @@
 .hidden-up-1 {
     filter: blur(4px);
     transform: translateY(-17%);
-    transition: all 400ms;
+    transition: all 600ms;
 }
 .hidden-up-2 {
     filter: blur(4px);
     transform: translateY(-25%);
-    transition: all 700ms;
+    transition: all 900ms;
 }
 .hidden-up-3 {
     filter: blur(3px);
@@ -68,26 +92,45 @@
 .hidden-left-1 {
     filter: blur(4px);
     transform: translateX(-15%);
-    transition: all 500ms;
+    transition: all 700ms;
 }
 .hidden-left-2 {
     filter: blur(4px);
     transform: translateX(-25%);
-    transition: all 700ms;
+    transition: all 900ms;
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
+    background-position: right;
 }
 
-
+.background-black-1 {
+    background-color: var(--black-1);
+}
 
 
 .background-color-base {
     background-color: var(--base-bg-color);
 }
+
+.background-withe-1 {
+    background-color: var(--white-1);
+}
+
+.text-1 {
+    color:var(--white-1);
+}
+.text-2 {
+    color: var(--white-2);
+}
+.text-3 {
+    color:var(--primary-orange)
+}
+
+
 
 .minor-text {
     font-family: "titleFont";
@@ -100,6 +143,10 @@ h1 {
     line-height: 140px;
 
     white-space: nowrap;
+}
+
+#Principal_Section {
+    color: var(--background-blue-1);
 }
 
 #sub-title-my-job {
@@ -133,11 +180,15 @@ h1 {
 }
 
 .about-me-separation {
-    margin: 60px;
+    margin: 100px;
+}
+
+.my-breif-history {
+    margin-top: 10%;
 }
 
 .separation {
-    margin: 100px;
+    margin: 120px;
 }
 
 
@@ -202,9 +253,6 @@ h1 {
 
     justify-content: center;
 
-
-
-    background-color: rgba(137, 43, 226, 0.432);
 }
 
 .grid-2 {
@@ -222,7 +270,6 @@ h1 {
     column-gap: 10px;
     row-gap: 5px;
 
-    background-color: rgba(137, 43, 226, 0.432);
 }
 
 .img-2 {
@@ -264,7 +311,7 @@ h1 {
 
     column-gap: 9px;
     row-gap: 5px;
-    background-color: rgba(137, 43, 226, 0.432);
+
 }
 
 

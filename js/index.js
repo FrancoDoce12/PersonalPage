@@ -15,10 +15,9 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 const elemenst_to_animate = document.querySelectorAll(
-    '.hidden-up-1, .hidden-up-2, .hidden-up-3, .img-hidden-left, .img-hidden-right, .hidden-left-1, .hidden-left-2'
-    )
-console.log(elemenst_to_animate)
+    '.hidden-up-1, .hidden-up-2, .hidden-up-3, .img-hidden-left, .img-hidden-right, .hidden-left-1, .hidden-left-2, .progresive-gradient-text-gray-1'
+)
+//console.log(elemenst_to_animate)
 elemenst_to_animate.forEach((el) => {
-
     observer.observe(el)
 })
