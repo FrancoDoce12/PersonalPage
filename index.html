@@ -9,6 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="Bootstrap-5.2.0-dist/css/bootstrap.min.css">
 
+    <!-- Custom icon dropbox from Google fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,7 +21,7 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav class="container-fluid p-1 background-black-1 zIndex2">
+    <nav class="container-fluid p-1 background-black-1 ">
         <div class="container-md px-md-3">
             <div class="row justify-content-between align-content-center">
                 <div class="col-4 d-flex justify-content-center align-content-center">
@@ -25,11 +29,14 @@
                 </div>
                 <div class="col-5 d-flex align-content-center">
                     <div class="row justify-content-between align-content-center f ps-3 flex-wrap">
-                        <div class="col-auto text-1">Curriculum</div>
-                        <div class="col-auto text-1">Contact Me</div>
-                        <div class="col-auto pe-0 text-1 dropdownContainer">
-                            <a id="dropdownButton" aria-expanded="false" >
+                        <div class="col-4 text-1"><a class="link-neon" href="">Curriculum</a></div>
+                        <div class="col-4 text-1"><a class="link-neon" href="">Contact Me</a></div>
+                        <div class="col-4 pe-0 text-1 dropdownContainer">
+                            <a class="link-neon" id="dropdownButton" aria-expanded="false">
                                 My Proyects
+                                <span class="material-symbols-outlined dropdownIcon">
+                                    arrow_drop_down
+                                </span>
                             </a>
                             <ul class="dropdownMenu dropdownMenu-hide " aria-labelledby="dropdownButton">
                                 <li><a href="#">site</a></li>

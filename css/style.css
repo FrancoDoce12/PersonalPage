@@ -23,9 +23,7 @@
     src: url("/assets/Fonts/NotoSerif-Regular.ttf");
 }
 
-.zIndex2 {
-    z-index: 2;
-}
+
 
 :root {
     --primary-ligth-blue: #1476A8;
@@ -34,8 +32,10 @@
     --secondary-blue: #0421DB;
     --secondary-orange: #FF8051;
 
-    --terciary-black-orange: #B37142;
+    --terciary-orange: #c9b291;
     --terciary-black: #222742;
+    --terciary-violet: rgb(181, 170, 202);
+
 
     --black-1: #24253f;
     --background-blue-1: #24253f;
@@ -146,7 +146,33 @@ body {
     transform: translateY(25%) scaleY(100%)
 }
 
+.link-neon {
+    border-color: var(--primary-orange);
+    border: 2px;
+    color: var(--terciary-orange);
+    white-space: nowrap;
+}
+.link-neon:hover {
+    text-shadow: 0px 0px 13px var(--primary-orange);
+    color: var(--primary-orange);
+    cursor: pointer;
+}
 
+
+.dropdownIcon {
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.dropdownIcon {
+    margin: auto 0px;
+}
 
 .background-black-1 {
     background-color: var(--black-1);
@@ -185,6 +211,12 @@ h1 {
     font-size: 150px;
     line-height: 140px;
 
+    white-space: nowrap;
+}
+
+#dropdownButton {
+    display: inline-flex;
+    flex-wrap: nowrap;
     white-space: nowrap;
 }
 
