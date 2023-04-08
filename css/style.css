@@ -31,10 +31,12 @@
 
     --secondary-blue: #0421DB;
     --secondary-orange: #FF8051;
+    --secondary-purple: rgb(108, 14, 196);
 
     --terciary-orange: #c9b291;
     --terciary-black: #222742;
-    --terciary-violet: rgb(181, 170, 202);
+    --terciary-violet: rgb(45, 8, 114);
+
 
 
     --black-1: #24253f;
@@ -54,6 +56,7 @@
 body {
     background-color: var(--background-blue-1);
 }
+
 
 .progresive-gradient-text-gray-1 {
     background: linear-gradient(180deg, rgb(167, 167, 167) 90%, rgba(255, 140, 81, 1) 10%);
@@ -125,7 +128,8 @@ body {
     z-index: 4;
     list-style: none;
     position: absolute;
-    top: 3%;
+    top: 15px;
+    right: 15px;
     overflow: hidden;
     background-color: var(--background-blue-1);
     border-radius: 10px;
@@ -158,21 +162,61 @@ body {
     cursor: pointer;
 }
 
-
-.dropdownIcon {
-    width: fit-content;
-    height: fit-content;
-    padding: 0px;
+.linkContainer {
+    white-space: nowrap;
 }
+
 
 a {
     text-decoration: none;
     font-weight: 700;
+    /* color: #7822aa; */
+    color: rgb(132, 89, 201);
+}
+a:hover {
+    color: #7822aa;
+    text-shadow: 0px 0px 13px #7822aa;
 }
 
-.dropdownIcon {
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.icon {
     margin: auto 0px;
 }
+
+.githubIcon {
+    height: 30px;
+}
+
+.iconContainer {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+
+.divisionFrame {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+
+footer {
+    background-color: hsl(252, 30%, 6%);
+    color: var(--white-2);
+    font-weight: 500;
+    margin-top: 120px;
+}
+
+.copyright {
+    color: hsl(252, 30%, 30%);
+}
+
+
+
 
 .background-black-1 {
     background-color: var(--black-1);
@@ -214,11 +258,6 @@ h1 {
     white-space: nowrap;
 }
 
-#dropdownButton {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
 
 #Principal_Section {
     color: var(--background-blue-1);
