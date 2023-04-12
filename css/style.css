@@ -1,26 +1,26 @@
 @font-face {
     font-family: "titleFont";
-    src: url("/assets/fonts/Anton-Regular.ttf");
+    src: url("/PersonalPage/assets/fonts/Anton-Regular.ttf");
 }
 
 @font-face {
     font-family: "subTitleFont";
-    src: url("/assets/fonts/Prompt-Medium.ttf");
+    src: url("/PersonalPage/assets/fonts/Prompt-Medium.ttf");
 }
 
 @font-face {
     font-family: "normalTextFont";
-    src: url("/assets/fonts/Prompt-Regular.ttf");
+    src: url("/PersonalPage/assets/fonts/Prompt-Regular.ttf");
 }
 
 @font-face {
     font-family: "for_i_bold";
-    src: url("/assets/fonts/NotoSerif-Bold.ttf");
+    src: url("/PersonalPage/assets/fonts/NotoSerif-Bold.ttf");
 }
 
 @font-face {
     font-family: "for_i_regular";
-    src: url("/assets/fonts/NotoSerif-Regular.ttf");
+    src: url("/PersonalPage/assets/fonts/NotoSerif-Regular.ttf");
 }
 
 
