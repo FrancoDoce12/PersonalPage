@@ -1,6 +1,6 @@
 @font-face {
     font-family: "titleFont";
-    src: url("/assets/fonts/Anton-Regular.ttf");
+    src: url("/PersonalPage/assets/Fonts/Anton-Regular.ttf");
 }
 
 @font-face {
@@ -10,17 +10,17 @@
 
 @font-face {
     font-family: "normalTextFont";
-    src: url("/PersonalPage/assets/fonts/Prompt-Regular.ttf");
+    src: url("/PersonalPage/assets/Fonts/Prompt-Regular.ttf");
 }
 
 @font-face {
     font-family: "for_i_bold";
-    src: url("/PersonalPage/assets/fonts/NotoSerif-Bold.ttf");
+    src: url("/PersonalPage/assets/Fonts/NotoSerif-Bold.ttf");
 }
 
 @font-face {
     font-family: "for_i_regular";
-    src: url("/PersonalPage/assets/fonts/NotoSerif-Regular.ttf");
+    src: url("/PersonalPage/assets/Fonts/NotoSerif-Regular.ttf");
 }
 
 
