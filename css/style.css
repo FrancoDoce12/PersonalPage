@@ -1,26 +1,29 @@
+
+
+
 @font-face {
     font-family: "titleFont";
-    src: url("/PersonalPage/assets/Fonts/Anton-Regular.ttf");
+    src: url("/assets/Fonts/Anton-Regular.ttf");
 }
 
 @font-face {
     font-family: "subTitleFont";
-    src: url("/PersonalPage/assets/Fonts/Prompt-Medium.ttf");
+    src: url("/assets/Fonts/Prompt-Medium.ttf");
 }
 
 @font-face {
     font-family: "normalTextFont";
-    src: url("/PersonalPage/assets/Fonts/Prompt-Regular.ttf");
+    src: url("/assets/Fonts/Prompt-Regular.ttf");
 }
 
 @font-face {
     font-family: "for_i_bold";
-    src: url("/PersonalPage/assets/Fonts/NotoSerif-Bold.ttf");
+    src: url("/assets/Fonts/NotoSerif-Bold.ttf");
 }
 
 @font-face {
     font-family: "for_i_regular";
-    src: url("/PersonalPage/assets/Fonts/NotoSerif-Regular.ttf");
+    src: url("/assets/Fonts/NotoSerif-Regular.ttf");
 }
 
 
@@ -156,6 +159,7 @@ body {
     color: var(--terciary-orange);
     white-space: nowrap;
 }
+
 .link-neon:hover {
     text-shadow: 0px 0px 13px var(--primary-orange);
     color: var(--primary-orange);
@@ -173,6 +177,7 @@ a {
     /* color: #7822aa; */
     color: rgb(132, 89, 201);
 }
+
 a:hover {
     color: #7822aa;
     text-shadow: 0px 0px 13px #7822aa;
@@ -212,7 +217,9 @@ footer {
 }
 
 .copyright {
+    white-space: nowrap;
     color: hsl(252, 30%, 30%);
+    text-align: center;
 }
 
 
@@ -413,15 +420,16 @@ h1 {
 }
 
 .grid-3 {
+    overflow: visible;
     height: 400px;
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(4, 200px) 100px;
+    grid-template-columns: repeat(4, 2fr) 1fr;
     grid-template-rows: 120px 189px 70px;
-    grid-template-areas: 'title      title      img_1       img_1        nothing_1'
-        'texto_1    texto_1    texto_1     img_2        img_2'
-        'img_3      texto_2    texto_2     texto_2      nothing_2'
+    grid-template-areas:    'title      title      img_1       img_1        nothing_1'
+                            'texto_1    texto_1    texto_1     img_2        img_2'
+                            'img_3      texto_2    texto_2     texto_2      nothing_2'
     ;
 
     column-gap: 9px;
@@ -489,3 +497,65 @@ h1 {
 .grid-area-img-3 {
     grid-area: img_3;
 }
+
+@media only screen and (min-width: 1400px) {
+    .grid-3 {
+        grid-template-columns: repeat(4, 200px) 100px;
+    }
+
+    .grid-3 .grid-area-text-1,.grid-3 .grid-area-text-2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-2 {
+        height: 450px;
+        grid-template-rows: 100px 350px;
+    }
+
+    .grid-3 {
+        height: 430px;
+        background-color: #7822aa;
+        grid-template-rows: 120px 215px 85px;
+
+        line-height: 27px;
+    }
+    .grid-3 .grid-area-text-1,.grid-3 .grid-area-text-2 {
+        font-size: 22px;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .grid-3 {
+        background-color: #124626;
+        height: 460px;
+        grid-template-rows: 120px 244px 85px;
+
+        line-height: 27px;
+    }
+
+    .grid-3 .grid-area-text-1,.grid-3 .grid-area-text-2 {
+        font-size: 19px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {}
+
+
+@media only screen and (max-width: 576px) {}
+
+
+
+
+
+
+
+
+
