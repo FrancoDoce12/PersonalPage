@@ -30,11 +30,12 @@
         <div class="container-md px-md-3">
             <div class="row justify-content-between align-content-center">
                 <div class="col-4 d-flex justify-content-center align-content-center">
-                    <h3 class="m-0 text-center text-1">Personal Page</h3>
+                    <h3 class="m-0 text-center text-1" id="personal-page-text">Personal Page</h3>
                 </div>
-                <div class="col-6 d-flex align-content-center justify-content-center">
-                    <div class="row justify-content-between align-content-center f flex-wrap ">
-                        <div class="col-4 text-1"><a class="link-neon" href="./files/curriculum-vitae-English.pdf">Curriculum</a></div>
+                <div class="col-8 d-flex align-content-center justify-content-end m-0">
+                    <div class="row justify-content-between align-content-center f flex-wrap navbar-options">
+                        <div class="col-4 text-1"><a class="link-neon"
+                                href="./files/curriculum-vitae-English.pdf">Curriculum</a></div>
                         <div class="col-4 text-1"><a class="link-neon" href="#footer">Contact Me</a></div>
                         <div class="col-4 pe-0 text-1 dropdownContainer">
                             <a class="link-neon iconContainer" id="dropdownButton" aria-expanded="false">
@@ -86,7 +87,7 @@
     </nav>
     <!-- Navbar End -->
 
-    
+
 
     <!-- Principal Section Start -->
     <section class="container-fluid background-color-base" id="Principal_Section">
@@ -95,11 +96,11 @@
                 <div class="col-7">
                     <div class="d-flex flex-column">
                         <h6 class="m-0 p-1 pb-0 minor-text hidden-up-1">I am</h6>
-                        <h1 class="m-0 p-0 hidden-up-1">
+                        <h1 class="m-0 p-0 hidden-up-1" id="franco-text" >
                             FRANCO
                         </h1>
                         <h1 class="m-0 p-0  ">
-                            <span class="hidden-up-2 d-inline-block">SANCHEZ</span><span
+                            <span class="hidden-up-2 d-inline-block" id="sanchez-text" >SANCHEZ</span><span
                                 class="minor-text ms-1 pb-0 hidden-up-3 d-inline-block">a</span>
                         </h1>
                         <h2 class="sub-title hidden-left-1" id="sub-title-my-job">Front End Developer</h2>
@@ -107,8 +108,8 @@
                     </div>
                 </div>
                 <div class="col-5">
-                    <div class="d-flex justify-content-center align-content-center h-100">
-                        <img class="" id="personal-photo" src="assets/Photos/imagenparacoso-removebg-preview.png"
+                    <div class="d-flex justify-content-center align-content-center h-100 m-auto">
+                        <img class="align-self-center" id="personal-photo" src="assets/Photos/imagenparacoso-removebg-preview.png"
                             alt="">
                     </div>
                 </div>
@@ -126,10 +127,10 @@
     <!-- About Me Section Start -->
     <section class="about-me">
         <div class="mt-5">
-            <div class="container-fluid divisionFrame">
+            <div class="container divisionFrame">
                 <div class="row justify-content-center">
                     <div class="col-8 justify-content-center">
-                        <div class="grid-1 background-black-1 text-2">
+                        <div class="grid-1 text-2">
                             <div class="grid-area-title title-1-container justify-content-center">
                                 <h3 class="title-1 text-start h-50 text-3 my-breif-history">
                                     My Breif History
@@ -182,25 +183,22 @@
         </div>
 
 
-        <div class="container-fluid divisionFrame">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <div class="grid-2 text-2">
-                        <h3 class="title-1 text-center grid-area-title m-auto text-3">
-                            Pasions
-                        </h3>
-                        <img class="img-1 grid-area-img-1 m-0 img-hidden-left" src="assets/Photos/aprender_3.jpg"
-                            alt="">
-                        <img class="img-2 grid-area-img-2 m-0 img-hidden-right" src="assets/Photos/enceñar.jpg" alt="">
-                        <p class="text-center grid-area-text-1 pharagraph-description-1"><span
-                                class="i_appercase">I</span> really enjoy learning from
-                            what I like and to transmit the same knowledge,
-                            I will always be willing to learn new things and to teach the knowledge acquired with the
-                            greater detail and simplicity possible. <br> I really enjoy programming and creating new
-                            things
-                            whether programs, computer systems or web pages
-                        </p>
-                    </div>
+        <div class="container-lg divisionFrame">
+            <div class="row justify-content-center align-content-center col-12 m-0">
+                <div class="grid-2 text-2">
+                    <h3 class="title-1 text-center grid-area-title m-auto text-3 ">
+                        Pasions
+                    </h3>
+                    <img class="img-1 grid-area-img-1 m-0 img-hidden-left" src="assets/Photos/aprender_3.jpg" alt="">
+                    <img class="img-2 grid-area-img-2 m-0 img-hidden-right" src="assets/Photos/enceñar.jpg" alt="">
+                    <p class="text-center grid-area-text-1 pharagraph-description-1"><span class="i_appercase">I</span>
+                        really enjoy learning from
+                        what I like and to transmit the same knowledge,
+                        I will always be willing to learn new things and to teach the knowledge acquired with the
+                        greater detail and simplicity possible. <br> I really enjoy programming and creating new
+                        things
+                        whether programs, computer systems or web pages
+                    </p>
                 </div>
             </div>
         </div>
@@ -208,7 +206,7 @@
 
         <div class="container divisionFrame">
             <div class="row justify-content-center">
-                <div class="col-10">
+                <div class="col-md-10">
                     <div class="grid-3 text-2">
                         <div
                             class="container-fluid grid-area-title container-title-3 d-flex justify-content-center m-0">
@@ -244,7 +242,7 @@
 
     <!-- Footer with my info -->
     <section>
-        <footer class="container-fluid" id="footer" role="contentinfo" >
+        <footer class="container-fluid" id="footer" role="contentinfo">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
@@ -288,7 +286,7 @@
                             </li>
                             <li>
                                 <div class="row">
-                                    <div class="col-6 text-end  pe-1">
+                                    <div class="col-6 text-end pe-1">
                                         Github Accaunt:
                                     </div>
                                     <div class="col-6 text-start">

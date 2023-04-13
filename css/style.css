@@ -1,6 +1,3 @@
-
-
-
 @font-face {
     font-family: "titleFont";
     src: url("/PersonalPage/assets/Fonts/Anton-Regular.ttf");
@@ -58,6 +55,7 @@
 
 body {
     background-color: var(--background-blue-1);
+    overflow-x: hidden;
 }
 
 
@@ -265,6 +263,9 @@ h1 {
     white-space: nowrap;
 }
 
+#personal-page-text {
+    white-space: nowrap;
+}
 
 #Principal_Section {
     color: var(--background-blue-1);
@@ -283,12 +284,15 @@ h1 {
     align-self: stretch;
     justify-self: stretch;
 
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
 
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-end-start-radius: 50%;
+    border-end-end-radius: 50%;
 
-    margin: auto;
+    /* margin: auto; */
+    
 }
 
 
@@ -380,6 +384,7 @@ h1 {
 .grid-2 {
     height: 405px;
     width: 100%;
+    padding: 0;
 
 
     display: grid;
@@ -427,9 +432,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 2fr) 1fr;
     grid-template-rows: 120px 189px 70px;
-    grid-template-areas:    'title      title      img_1       img_1        nothing_1'
-                            'texto_1    texto_1    texto_1     img_2        img_2'
-                            'img_3      texto_2    texto_2     texto_2      nothing_2'
+    grid-template-areas: 'title      title      img_1       img_1        nothing_1'
+        'texto_1    texto_1    texto_1     img_2        img_2'
+        'img_3      texto_2    texto_2     texto_2      nothing_2'
     ;
 
     column-gap: 9px;
@@ -499,20 +504,29 @@ h1 {
 }
 
 @media only screen and (min-width: 1400px) {
+    .navbar-options {
+        margin: 0px 30px 0px 30px;
+    }
+
     .grid-3 {
         grid-template-columns: repeat(4, 200px) 100px;
     }
 
-    .grid-3 .grid-area-text-1,.grid-3 .grid-area-text-2 {
+    .grid-3 .grid-area-text-1,
+    .grid-3 .grid-area-text-2 {
         font-size: 22px;
     }
 }
 
 @media only screen and (max-width: 1400px) {
-
+    .navbar-options {
+        margin: 0px 30px 0px 30px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
+
+
     .grid-2 {
         height: 450px;
         grid-template-rows: 100px 350px;
@@ -525,37 +539,70 @@ h1 {
 
         line-height: 27px;
     }
-    .grid-3 .grid-area-text-1,.grid-3 .grid-area-text-2 {
+
+    .grid-3 .grid-area-text-1,
+    .grid-3 .grid-area-text-2 {
         font-size: 22px;
     }
-    
+
 }
 
 @media only screen and (max-width: 992px) {
-    .grid-3 {
-        background-color: #124626;
-        height: 460px;
-        grid-template-rows: 120px 244px 85px;
-
-        line-height: 27px;
+    #personal-photo {
+        max-height: 360px;
     }
 
-    .grid-3 .grid-area-text-1,.grid-3 .grid-area-text-2 {
-        font-size: 19px;
+    h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+
+    .grid-3 {
+        background-color: #124626;
+        height: 510px;
+        grid-template-rows: 120px 270px 100px;
+
+        line-height: 27px;
+        grid-template-columns: repeat(4, 22%) 80px;
+    }
+
+    .grid-3 .grid-area-text-1,
+    .grid-3 .grid-area-text-2 {
+        font-size: 22px;
+    }
+
+    .grid-2 {
+        height: 500px;
+        grid-template-rows: 70px 350px;
+        grid-template-columns: 30% 40% 30%;
+
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #personal-photo {
+        max-height: 300px;
+    }
+
+    .navbar-options {
+        margin: 0;
+        padding: 0;
+    }
+    .grid-2 {
+        background-color: #cf8413;
+        grid-template-rows: 70px 480px;
+        height: fit-content;
     }
 
 }
 
-@media only screen and (max-width: 768px) {}
 
+@media only screen and (max-width: 576px) {
+    #personal-page-text .link-neon .grid-2 {
+        background-color: antiquewhite;
+    }
 
-@media only screen and (max-width: 576px) {}
-
-
-
-
-
-
-
-
-
+}
