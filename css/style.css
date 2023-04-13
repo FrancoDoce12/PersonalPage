@@ -3,27 +3,27 @@
 
 @font-face {
     font-family: "titleFont";
-    src: url("/assets/Fonts/Anton-Regular.ttf");
+    src: url("/PersonalPage/assets/Fonts/Anton-Regular.ttf");
 }
 
 @font-face {
     font-family: "subTitleFont";
-    src: url("/assets/Fonts/Prompt-Medium.ttf");
+    src: url("/PersonalPage/assets/Fonts/Prompt-Medium.ttf");
 }
 
 @font-face {
     font-family: "normalTextFont";
-    src: url("/assets/Fonts/Prompt-Regular.ttf");
+    src: url("/PersonalPage/assets/Fonts/Prompt-Regular.ttf");
 }
 
 @font-face {
     font-family: "for_i_bold";
-    src: url("/assets/Fonts/NotoSerif-Bold.ttf");
+    src: url("/PersonalPage/assets/Fonts/NotoSerif-Bold.ttf");
 }
 
 @font-face {
     font-family: "for_i_regular";
-    src: url("/assets/Fonts/NotoSerif-Regular.ttf");
+    src: url("/PersonalPage/assets/Fonts/NotoSerif-Regular.ttf");
 }
 
 
