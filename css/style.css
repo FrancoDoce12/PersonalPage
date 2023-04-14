@@ -292,7 +292,7 @@ h1 {
     border-end-end-radius: 50%;
 
     /* margin: auto; */
-    
+
 }
 
 
@@ -363,7 +363,8 @@ h1 {
     display: grid;
     grid-template-columns: 70px repeat(3, 200px) 70px;
     grid-template-rows: 100px repeat(6, 100px) 28px 100px 100px;
-    grid-template-areas: 'img_1      img_1      title       title       nothing_1'
+    grid-template-areas:
+        'img_1      img_1      title       title       nothing_1'
         'img_1      img_1      texto_1     texto_1     nothing_2'
         'img_1      img_1      texto_1     texto_1     nothing_2'
         'nothing_5  texto_2    texto_2     texto_2     nothing_2'
@@ -389,8 +390,11 @@ h1 {
 
     display: grid;
     grid-template-columns: 29% 40% 29%;
-    grid-template-rows: 100px 300px;
-    grid-template-areas: 'img_1       title      img_2'
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-areas:
+        'img_1       title      img_2'
+        'img_1       texto_1    img_2'
+        'img_1       texto_1    img_2'
         'img_1       texto_1    img_2'
     ;
 
@@ -432,7 +436,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 2fr) 1fr;
     grid-template-rows: 120px 189px 70px;
-    grid-template-areas: 'title      title      img_1       img_1        nothing_1'
+    grid-template-areas:
+        'title      title      img_1       img_1        nothing_1'
         'texto_1    texto_1    texto_1     img_2        img_2'
         'img_3      texto_2    texto_2     texto_2      nothing_2'
     ;
@@ -553,7 +558,6 @@ h1 {
     }
 
     h1 {
-        background-color: #1476A8;
         font-size: 120px;
         line-height: 120px;
     }
@@ -578,28 +582,129 @@ h1 {
         grid-template-rows: 70px 350px;
         grid-template-columns: 30% 40% 30%;
 
-}
+    }
 }
 
 
 @media only screen and (max-width: 768px) {
 
+    .grid-1 {
+        grid-template-columns: repeat(3, 200px);
+        grid-template-areas:
+            'img_1      title       title  '
+            'img_1      texto_1     texto_1'
+            'img_1      texto_1     texto_1'
+            'texto_2    texto_2     texto_2'
+            'texto_3    texto_3     img_2  '
+            'texto_3    texto_3     img_2  '
+            'texto_4    texto_4     texto_4'
+            'texto_4    texto_4     texto_4'
+            'texto_5    img_3       img_3  '
+            'texto_5    img_3       img_3  ';
+    }
+
+    .grid-1 {
+        object-fit: scale-down;
+    }
+
+
     #personal-photo {
-        max-height: 300px;
+        max-height: 220px;
+    }
+
+    h1 {
+        font-size: 90px;
+        line-height: 80px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-top: 17px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h6 {
+        font-size: 25px;
     }
 
     .navbar-options {
         margin: 0;
         padding: 0;
     }
+
+
     .grid-2 {
-        background-color: #cf8413;
-        grid-template-rows: 70px 480px;
         height: fit-content;
+        background-color: red;
+        column-gap: 2%;
+        grid-template-rows: 100px repeat(4, calc(450px / 4));
+        grid-template-columns: 28% 40% 28%;
+        grid-template-areas:
+            'nothing_3   title      nothing_2'
+            'img_1       texto_1    nothing_2'
+            'img_1       texto_1    nothing_2'
+            'nothing_1   texto_1    img_2'
+            'nothing_1   texto_1    img_2'
+        ;
+    }
+
+    .grid-2 img {
+        border-radius: 5%;
     }
 
 }
 
+/* added media query for convinience of its own proyect */
+@media only screen and (max-width: 650px) {
+
+
+    .grid-1 {
+        grid-template-columns: repeat(3, 33%);
+    }
+
+
+    .grid-2 {
+        background-color: red;
+        column-gap: 2%;
+        grid-template-rows: 100px repeat(3, calc(450px / 4));
+        grid-template-columns: 28% 40% 28%;
+        grid-template-areas:
+            'title       title      img_1'
+            'texto_1     texto_1    img_1'
+            'texto_1     texto_1    img_2'
+            'texto_1     texto_1    img_2'
+        ;
+    }
+
+    .grid-2 img {
+        border-radius: 3%;
+    }
+
+    .grid-3 {
+
+
+        background-color: #124626;
+        /* height: 510px; */
+        grid-template-rows: 120px 135px 135px 100px;
+
+        /* line-height: 27px; */
+        grid-template-columns: repeat(4, 22%) 80px;
+
+        grid-template-areas:
+            'title      title      img_1   img_1'
+            'texto_1    texto_1    texto_1 img_2'
+            'texto_1    texto_1    texto_1 img_3'
+            'texto_2    texto_2    texto_2 texto_2';
+
+        /* column-gap: 9px;
+        row-gap: 5px; */
+
+    }
+
+}
 
 @media only screen and (max-width: 576px) {
     #personal-page-text .link-neon .grid-2 {
