@@ -301,10 +301,6 @@ h1 {
 }
 
 
-.where-is-this {
-    background-color: rgba(137, 43, 226, 0.432);
-}
-
 .sub-title {
     font-family: "subTitleFont";
     letter-spacing: -2px;
@@ -544,7 +540,6 @@ h1 {
     }
 
     .grid-3 {
-        background-color: #7822aa;
         grid-template-rows: 120px 215px 85px;
 
         line-height: 27px;
@@ -569,7 +564,6 @@ h1 {
 
 
     .grid-3 {
-        background-color: #124626;
         grid-template-rows: 120px 270px 100px;
 
         line-height: 27px;
@@ -644,7 +638,6 @@ h1 {
 
     .grid-2 {
         height: fit-content;
-        background-color: red;
         column-gap: 2%;
         grid-template-rows: 100px repeat(4, calc(450px / 4));
         grid-template-columns: 28% 40% 28%;
@@ -678,7 +671,6 @@ h1 {
 
 
     .grid-2 {
-        background-color: red;
         column-gap: 2%;
         grid-template-rows: 100px repeat(3, calc(450px / 4));
         grid-template-columns: 28% 40% 28%;
@@ -696,8 +688,6 @@ h1 {
 
     .grid-3 {
 
-
-        background-color: #124626;
         grid-template-rows: 120px 140px 180px 100px;
 
         grid-template-columns: repeat(4, 22%) 80px;
