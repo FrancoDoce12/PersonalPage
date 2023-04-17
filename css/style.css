@@ -585,6 +585,10 @@ h1 {
 
 
 @media only screen and (max-width: 768px) {
+    .my-breif-history-container {
+        padding-top: 80px !important;
+    }
+
 
     .grid-1 {
         grid-template-columns: repeat(3, 200px);
@@ -663,6 +667,10 @@ h1 {
 /* added media query for convinience of its own proyect */
 @media only screen and (max-width: 650px) {
 
+    .my-breif-history-container {
+        padding-top: 60px !important;
+    }
+
 
     .grid-1 {
         grid-template-columns: repeat(3, 31%);
@@ -734,6 +742,10 @@ h1 {
 
     h6.minor-text {
         font-size: 22px;
+    }
+
+    .my-breif-history-container {
+        padding-top: 30px !important;
     }
 
     .grid-1 h3, .grid-2 h3, .grid-3 h3 {
@@ -812,8 +824,15 @@ h1 {
         padding: 0px 4px 0px 4px;
     }
 
+    .my-breif-history-container {
+        padding-top: 90px !important;
+    }
     .link-neon {
         font-size: 16px;
+    }
+
+    .my-breif-history-container {
+        padding-top: 20px !important;
     }
 
     .my-breif-history {
@@ -910,6 +929,10 @@ h1 {
 
     h6.minor-text {
         font-size: 13px;
+    }
+
+    .my-breif-history-container {
+        padding-top: 10px !important;
     }
 
 
