@@ -214,6 +214,7 @@ footer {
     font-weight: 500;
     margin-top: 120px;
 }
+
 .navbar-options-container {
     justify-content: flex-end;
 }
@@ -672,7 +673,7 @@ h1 {
 
     .grid-1 {
         grid-template-columns: repeat(3, 31%);
-        grid-template-rows: 100px 135px 135px 130px 130px 165px 170px 28px repeat(2,130px);
+        grid-template-rows: 100px 135px 135px 130px 130px 165px 170px 28px repeat(2, 130px);
     }
 
 
@@ -721,7 +722,7 @@ h1 {
         padding: 0px;
     }
 
-    
+
     #personal-photo {
         max-height: 180px;
     }
@@ -732,26 +733,29 @@ h1 {
     }
 
     h2 {
-        font-size: 24px;
-        padding-top: 25px;
+        font-size: 20px;
+        padding-top: 30px;
     }
 
     h3 {
         font-size: 25px;
     }
-    
 
-    h6 {
+
+    h6.minor-text {
         font-size: 22px;
     }
 
-    .my-breif-history {
-        font-size: 30px;
+    .grid-1 h3, .grid-2 h3, .grid-3 h3 {
+        font-size: 33px;
     }
+
+    
 
     .grid-1 {
         grid-template-columns: repeat(3, 31%);
-        grid-template-rows: 100px 135px 135px 130px 130px 165px 170px 28px 260px;
+        /* grid-template-rows: 100px 135px 135px 130px 130px 165px 170px 28px 260px; */
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
         grid-template-areas:
             'nothing_1  title       title  '
             'img_1      texto_1     texto_1'
@@ -762,16 +766,38 @@ h1 {
             'texto_4    texto_4     texto_4'
             'texto_4    texto_4     texto_4'
             'texto_5    img_3       img_3  '
-            ;
+        ;
+    }
+
+    .grid-1 p {
+        margin: 0px !important;
+        row-gap: 0px;
+    }
+
+    .grid-2 {
+        font-size: 21px;
+        grid-template-rows: 120px auto auto auto;
+    }
+
+    .grid-2 p {
+        margin: 0px !important;
+        row-gap: 0px;
     }
 
     .grid-3 {
         font-size: 21px;
+        grid-template-rows: 120px auto auto auto;
+    }
+
+    .grid-3 p {
+        margin: 0px !important;
+        row-gap: 0px;
     }
 
     .contact-me-content {
         font-size: 16px;
     }
+
     .copyright {
         white-space: normal;
     }
@@ -787,13 +813,17 @@ h1 {
         padding: 0px;
     }
 
-    
+
 
 }
 
 @media only screen and (max-width: 476px) {
     .navbar-options div {
-        padding:0px 7px 0px 7px ;
+        padding: 0px 4px 0px 4px;
+    }
+
+    .link-neon {
+        font-size: 16px;
     }
 
     .my-breif-history {
@@ -801,7 +831,96 @@ h1 {
         text-align: center;
     }
 
-    .link-neon {
-        font-size: 16px;
+    /* 
+
+            'img_1      title       title   '
+            'texto_1    texto_1     texto_1 '
+            'texto_1    texto_1     texto_1 '
+            'texto_2    texto_2     img_2'
+            'texto_3    texto_3     texto_3  '
+            'texto_3    texto_3     texto_3  '
+            'texto_4    texto_4     texto_4  '
+            'texto_4    texto_4     texto_4 '
+            'texto_5    texto_5     nothing_1  '
+            'texto_5    texto_5     nothing_1  '
+             */
+
+    .grid-1 {
+        grid-template-areas:
+            'title      title       title   '
+            'texto_1    texto_1     img_1   '
+            'texto_1    texto_1     img_1   '
+            'img_2      texto_2     texto_2 '
+            'texto_3    texto_3     texto_3 '
+            'texto_3    texto_3     texto_3 '
+            'texto_4    texto_4     texto_4 '
+            'texto_4    texto_4     texto_4 '
+            'texto_5    texto_5     img_3   '
+        ;
     }
+
+    /* .grid-1 img {
+        display: none;
+    } */
+
+    .grid-1 .grid-area-text-1, .grid-1 .grid-area-text-5 {
+        text-align: end !important;
+    }
+    
+    .grid-1 .grid-area-text-2 {
+        text-align: start !important;
+    }
+    
+
+    .grid-1 p,
+    .grid-1 h3 {
+        text-align: center !important;
+    }
+
+
+    .grid-2 {
+        grid-template-areas:
+            'img_2   title   img_1'
+            'texto_1 texto_1 texto_1'
+            'texto_1 texto_1 texto_1'
+            'texto_1 texto_1 texto_1'
+        ;
+    }
+    .grid-2 img {
+        border-radius: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 340px) {
+    .link-neon {
+        padding: 0px;
+        font-size: 12px;
+    }
+
+
+    #personal-photo {
+        max-height: 130px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    h2 {
+        font-size: 15px;
+        padding-top: 45px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+
+    h6.minor-text {
+        font-size: 13px;
+    }
+
+
 }
